@@ -10,3 +10,18 @@ const loginFormValidation = {
 
 export const LoginFormValidationSchema: TLoginFormValidationSchema =
   object().shape({ ...loginFormValidation });
+
+export const LoginFormDefaultValues: ILoginForm = {
+  username: "",
+  password: "",
+};
+
+export enum LoginFormFields {
+  Username = "username",
+  Password = "password",
+}
+
+export enum LoginFormHelperText {
+  Username = "Enter a username",
+  Password = "Enter a password",
+}
