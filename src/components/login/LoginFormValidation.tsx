@@ -1,8 +1,12 @@
-import * as yup from "yup";
+import { AnyObject, ObjectSchema, object, string } from "yup";
+import { ILoginForm } from "../../types";
 
-const LoginValidationSchema = {
-  username: yup.string(),
-  password: yup.string(),
+type TLoginFormValidationSchema = ObjectSchema<ILoginForm, AnyObject, any, "">;
+
+const loginFormValidation = {
+  username: string().required(),
+  password: string().required(),
 };
 
-export const LoginSchema = () => yup.object(LoginValidationSchema);
+export const LoginFormValidationSchema: TLoginFormValidationSchema =
+  object().shape({ ...loginFormValidation });
