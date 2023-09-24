@@ -1,9 +1,5 @@
 const LoginForm = () => {
-   return (
-      <>
-         Inputs here.
-      </>
-   );
+  return <>Inputs here.</>;
 };
 
 export default LoginForm;

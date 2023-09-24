@@ -1,10 +1,15 @@
-import './App.css';
-import Home from './components/Home';
-import '@fontsource/inter';
+import { CssVarsProvider, Sheet } from "@mui/joy";
+import "./App.css";
+import Home from "./components/Home";
+import "@fontsource/inter";
 
 function App() {
   return (
-   <Home/>
+    <CssVarsProvider>
+      <Sheet variant="outlined">
+        <Home />
+      </Sheet>
+    </CssVarsProvider>
   );
 }
 

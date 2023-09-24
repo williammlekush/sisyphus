@@ -1,11 +1,11 @@
 import LoginForm from "./LoginForm";
 
 const Login = () => {
-   return (
-      <>
-         <LoginForm />
-      </>
-   );
+  return (
+    <>
+      <LoginForm />
+    </>
+  );
 };
 
 export default Login;
