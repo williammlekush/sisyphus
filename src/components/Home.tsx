@@ -1,10 +1,7 @@
+import { Typography } from "@mui/joy";
 
 const Home = () => {
-   return (
-      <>
-         Welcome home!
-      </>
-   );
+  return <Typography level="h1">Welcome home!</Typography>;
 };
 
 export default Home;
